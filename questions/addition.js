@@ -5,7 +5,22 @@
 */
 
 const addition = (...numbers) => {
-  // all your code
-};
-
+    if(numbers.length>0 ){
+      let sum=0;
+      numbers.forEach(number=>{
+        if(number === parseInt(number,10)){
+          sum+=number;
+        }
+        else{
+          throw new Error("Invalid Input");
+        }
+      });
+    return sum;
+    }
+    else{
+      throw new Error('Invalid Input');
+    }
+}
 module.exports = addition;
+
+ 
