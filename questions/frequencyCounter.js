@@ -18,11 +18,11 @@ const frequencyCounter = (str) => {
     };
     const arr =str.split('');
     arr.forEach(l=>{
-       if(l.toLowerCase()=='a') value.a=1;
-       if (l.toLowerCase() == "e") value.e = 1;
-       if (l.toLowerCase() == "i") value.i = 1;
-       if (l.toLowerCase() == "o") value.o = 1;
-       if (l.toLowerCase() == "u") value.u = 1;
+       if(l.toLowerCase()=='a') value.a ++;  
+       if (l.toLowerCase() == "e") value.e ++;
+       if (l.toLowerCase() == "i") value.i ++;
+       if (l.toLowerCase() == "o") value.o ++;
+       if (l.toLowerCase() == "u") value.u ++;
     });
     return value;
 
